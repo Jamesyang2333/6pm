@@ -204,6 +204,9 @@ class _SignupPageState extends State<SignupPage> {
                   title: Text('The email has been used'),
                   content: Text('Please use another email to register for 6pm'),
                 ));
+            _email = '';
+            _password = '';
+            _username = '';
         print(e.message);
       }
     }
