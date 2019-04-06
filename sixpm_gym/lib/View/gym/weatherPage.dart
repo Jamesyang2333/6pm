@@ -49,7 +49,6 @@ class WeatherPageState extends State<WeatherPage> {
                   if (snapshot.hasData) {
                     if (snapshot.data.length == 47) {
                       weatherList = snapshot.data;
-
                       return FutureBuilder(
                           future: getNearestWeather(),
                           builder:
