@@ -109,9 +109,10 @@ class MatchedSessionPage extends StatelessWidget {
     DateTime _checkInMin = DateTime.now().add(new Duration(minutes: 15));
     DateTime _checkInMax = DateTime.now().subtract(new Duration(minutes: 15));
     final bool allowCheckIn =
-        ((_checkInMin.isAfter(document['startDateTime'].toDate())) &&
+        ((_checkInMin.isAfter(document['startDateTime'])) &&
             (_checkInMax.isBefore(document[
                 'startDateTime']))); //Only can check in +-15mins of start time
+    // final bool allowCheckIn = true;
 
     return Scaffold(
       appBar: AppBar(

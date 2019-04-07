@@ -22,7 +22,7 @@ dependencies:
   flutter_cupertino_date_picker: ^0.3.0
   flutter_rating: ^0.0.2
   firebase_core: ^0.3.1
-  cloud_firestore: ^0.9.7
+  cloud_firestore: ^0.9.8
   firebase_auth: ^0.8.2
   grouped_buttons: ^1.0.3
   path_provider: ^0.5.0+1

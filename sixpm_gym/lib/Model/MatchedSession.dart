@@ -19,7 +19,7 @@ class MatchedSession {
   bool completed;
   double rate1;
   double rate2;
-  Timestamp startDateTime;
+  DateTime startDateTime;
   DocumentReference docRef;
 
   //Constructor
