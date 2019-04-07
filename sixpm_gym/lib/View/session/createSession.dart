@@ -356,13 +356,13 @@ class CreateSessionState extends State<CreateSession> {
                             //No gym selected
                             _gymErrorDialog(context);
                           } 
-                          // else if (_startTimeIndex >= _endTimeIndex) {
-                          //   //start time after end time
-                          //   _timeErrorDialog(context, 1);
-                          // } else if (DateTime.parse(globals.dateISO + ' ' + _startTime).isBefore(DateTime.now())) {
-                          //   //start date before now
-                          //   _timeErrorDialog(context, 2);
-                          // } 
+                          else if (_startTimeIndex >= _endTimeIndex) {
+                            //start time after end time
+                            _timeErrorDialog(context, 1);
+                          } else if (DateTime.parse(globals.dateISO + ' ' + _startTime).isBefore(DateTime.now())) {
+                            //start date before now
+                            _timeErrorDialog(context, 2);
+                          } 
                           else {
                             String _startDateTime =
                                 globals.dateISO + ' ' + _startTime + ':00';
